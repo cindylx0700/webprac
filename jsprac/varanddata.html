@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>var and data type</title>
+</head>
+<body>
+
+<style>
+    .bluebox{
+    background-color: rgb(39, 159, 218);
+    width:auto;
+    height:100px;
+    color:white;
+  }
+
+  .yellowbox{
+    background-color: rgb(240, 220, 89);
+    width:auto;
+    height:100px;
+    color:black;
+  }
+  .greenbox{
+    background-color:rgb(51, 196, 79);
+    width:auto;
+    height:100px;
+    color:auto;
+  }
+  .great{
+    font-weight: bold;
+  }
+</style>
+
+  <div class = "bluebox" id ="facebook" >
+    <p>
+      facebook is
+      <span class ="great">
+        great
+      </span>
+      .  </p>
+  </div>
+  <div class = "yellowbox" id ="Apple">
+<p>
+  Apple.</p>
+  </div>
+  <div class ="greenbox" id="Microsoft">
+<p>
+  Microsoft</p>
+  </div>
+
+  <button id = "button1">
+    "change facebook style"
+  </button>
+
+  <button id = "button2">
+    "change apple style"
+  </button>
+  <!-- 更改html 样式 -->
+  <!-- <script>
+document.getElementById("button1").onclick = function(){
+  document.getElementById("facebook").style.width = '200px';
+  document.getElementById("facebook").style.backgroundColor = 'rgba( 26, 203, 135, 0.1 )';
+  document.getElementById("facebook").style.color = 'red';
+}
+
+document.getElementById("button2").ondblclick = function(){
+  document.getElementById("apple").style.fontFamily = 'monospace';
+  document.getElementById("apple").style.fontSize= '3em';
+  document.getElementById("apple").style.color = 'red';
+}
+</script> -->
+
+<script>
+var x = 3;
+window.console.log(x);
+var y;
+y = 5;
+var z;
+
+window.console.log("the value of z is " + z);
+z = x + y;
+window.console.log("the value of z is " + z);
+window.console.log("the type of z is: " + typeof(z));
+z = x + " " + y;
+window.console.log("the value of z is " + z);
+window.console.log("the type of z is: " + typeof(z));
+var greeting = "Hello";
+var firstname = "John";
+var message = greeting + " " + firstname;
+    window.console.log("value of message is: "  + message);
+    window.console.log(" type of message is: " + typeof(message));
+    var check = (x == 5);
+    window.console.log("the value of check is:"+ check);
+    window.console.log("the type of check is: " + typeof(check));
+
+var myArray = [1,2,3];
+window.console.log(myArray); window.console.log(typeof(myArray));
+  </script>
+</body>
+</html>
